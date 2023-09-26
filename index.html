@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAYMENT FORM</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="get">
+        <h1 class="main_heading">PAYMENT FORM</h1>
+        <hr />
+        <h2>CONTACT INFORMATION</h2>
+        <p>NAME:*<input type="text" name="name" placeholder="Enter Your Name" required /></p>
+        <fieldset>
+          <legend>GENDER*</legend>
+          <p>
+            MALE <input type="radio" name="gender" id="male" required /> Female
+            <input type="radio" name="gender" id="female" required />
+          </p>
+        </fieldset>
+        <p>
+          Address:<textarea
+            placeholder="Enter Your Address"
+            name="Address"
+            id="address"
+            rows="5"
+            cols="30"
+          ></textarea>
+        </p>
+        <p>
+          Email:*<input type="email" placeholder="john123@mail.com" "email" id="email" required />
+        </p>
+        <p>contact number:* <input type="number" name="contact" id="contact" required /></p>
+        <p>pincode:<input type="number" placeholder="123456"</p>
+        <br />
+        <!-- <a href="index2.html" id="btn">next</a> -->
+        <div class="button"><a href="index2.html" id="btn" style="width: 100%">NEXT</a></div>
+        <!-- <h2>PAYMENT INFORMATION</h2>
+        <p>
+          CARD TYPE:*
+          <img src="payment card.png" class="card" alt="cards" />
+          <select name="card_type" id="card_type" required>
+            <option value="">--select a card type--</option>
+            <option value="rupay">RUPAY</option>
+            <option value="visa">VISA</option>
+            <option value="mastercard">MASTERCARD</option>
+          </select>
+        </p>
+        <p>card holder name:* <input type="text" name="card holder name" required /></p>
+        <p>
+          card number:*<input type="number" name="card number" placeholder="1111-2222-3333-4444" />
+        </p>
+        <p>card expiry date:*<input type="date" name="date" id="date" required /></p>
+        <p>CVV:*<input type="password" name="cvv" placeholder="123" required /></p>
+        <input type="submit" value="PAY NOW" />
+      </form>
+    </div> -->
+      </form>
+    </div>
+    <script>
+      var element = document.getElementById("btn");
+      element.onclick = function (event) {
+        console.log(event);
+      };
+    </script>
+  </body>
+</html>
