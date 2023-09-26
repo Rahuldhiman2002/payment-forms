@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAYMENT INFORMATION</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="get" class="payment-form">
+        <h2>PAYMENT INFORMATION</h2>
+        <p>
+          CARD TYPE:*
+          <img src="payment card.png" class="card" alt="cards" />
+          <select name="card_type" id="card_type" required>
+            <option value="">--select a card type--</option>
+            <option value="rupay">RUPAY</option>
+            <option value="visa">VISA</option>
+            <option value="mastercard">MASTERCARD</option>
+          </select>
+        </p>
+        <p>card holder name:* <input type="text" name="card holder name" required /></p>
+        <p>
+          card number:*<input
+            type="number"
+            name="card number"
+            placeholder="1111-2222-3333-4444"
+            required
+          />
+        </p>
+        <p>card expiry date:*<input type="date" name="date" id="date" required /></p>
+        <p>CVV:*<input type="password" name="cvv" placeholder="123" required /></p>
+        <p>
+          AMOUNT:*<input
+            type="number"
+            name="amount"
+            placeholder="Please enter your amount"
+            required
+          />
+        </p>
+        <input id="btn1" type="submit" value="PAY NOW" />
+      </form>
+    </div>
+
+    <script>
+      let element = document.getElementById("btn1");
+      element.onclick = function() {
+        let text = prompt("OTP has been sent to your registered mobile number.");
+        if (text !== "") {  
+                     alert(`YOUR PAYMENT HAS BEEN DONE`);
+            } else {
+          alert(`PAYMENT TERMINATED`);
+        }
+
+        console.log();
+      }
+      
+
+    </script>
+  </body>
+</html>
